@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Chess.com Bot",
+  "version": "1.0",
+
+  "description": "Chess Bot ",
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.chess.com/analysis/*","*://www.chess.com/game/live/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions":["activeTab"]
+
+}
+
+
